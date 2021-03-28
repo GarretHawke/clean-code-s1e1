@@ -10,10 +10,13 @@ body {
   display: block;
   text-align: right;
 }
+.header_visually-hidden {
+  display: none;
+}
 .header__img {
   width: 100%;
 }
-.additional-info {
+.header__additional-info {
   font-family: fantasy, cursive;
 }
 
@@ -29,12 +32,15 @@ body {
   width: 500px;
   margin: 0 auto 0;
 }
-.task {
+.task,
+.add-task__input,
+.task__list__item__input,
+.task__list__item__input_inactive {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
-.task-row-wrapper {
+.add-task__row-wrapper {
   display: flex;
 }
 ul {
@@ -89,6 +95,7 @@ input[type="text"]:focus {
 }
 
 /* New Task */
+.add-item,
 label[for="new-task"] {
   display: block;
   margin: 0 0 20px;
@@ -153,4 +160,8 @@ li input[type="text"] {
 
 .edit-mode label {
   display: none;
+}
+
+.add-task {
+  margin: 16px 0 16px;
 }
