@@ -34,8 +34,8 @@ body {
 }
 .task,
 .add-task__input,
-.task__list__item__input,
-.task__list__item__input_inactive {
+.task__input,
+.task__input_inactive {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
